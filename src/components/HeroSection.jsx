@@ -66,7 +66,7 @@ const HeroSection = () => {
             loop
             muted
             className="object-contain w-full h-full"
-            style={{ objectFit: 'cover' }}
+          
           />
         </motion.div>
 
