@@ -66,7 +66,7 @@ const HeroSection = () => {
             loop
             muted
             className="object-contain w-full h-full"
-            poster={photo2}
+            style={{ objectFit: 'cover' }}
           />
         </motion.div>
 
