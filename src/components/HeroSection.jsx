@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Media assets
-import photo1 from '../photosales.svg';
+import photosales from '../photosales.svg';
 import photo2 from '../assets/photo2.jpg';
 import photo3 from '../assets/photo6.avif';
 
@@ -55,7 +55,7 @@ const HeroSection = () => {
       
 
         {/* Images */}
-        {[photo1, photo2, photo3].map((photo, index) => (
+        {[photosales, photo2, photo3].map((photo, index) => (
           <motion.div
             key={index}
             className="w-full overflow-hidden bg-white shadow-xl aspect-video rounded-2xl"
