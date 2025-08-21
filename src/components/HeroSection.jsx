@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 // Media assets
-import video1 from '../assets/video5.mp4';
+import photo1 from '../photosales.svg';
 import photo2 from '../assets/photo2.jpg';
 import photo3 from '../assets/photo6.avif';
 
@@ -51,30 +51,11 @@ const HeroSection = () => {
       </div>
 
       {/* Media Grid */}
-      <div className="grid w-full max-w-6xl grid-cols-1 gap-6 px-4 mt-8 sm:grid-cols-2 lg:grid-cols-3">
-        {/* Video */}
-        <motion.div
-          className="w-full overflow-hidden bg-black shadow-xl aspect-video rounded-2xl"
-          custom={0}
-          initial="hidden"
-          animate="visible"
-          variants={imageVariants}
-        >
-
-       <video
-          autoPlay
-          loop
-          muted
-          className="object-contain w-full h-full"
-        >
-          <source src={video1} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        </motion.div>
- 
+      
+      
 
         {/* Images */}
-        {[photo2, photo3].map((photo, index) => (
+        {[photo1, photo2, photo3].map((photo, index) => (
           <motion.div
             key={index}
             className="w-full overflow-hidden bg-white shadow-xl aspect-video rounded-2xl"
@@ -90,9 +71,11 @@ const HeroSection = () => {
             />
           </motion.div>
         ))}
+
       </div>
-    </div>
+  
   );
+
 };
 
 export default HeroSection;
