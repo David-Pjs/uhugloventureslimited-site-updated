@@ -60,15 +60,18 @@ const HeroSection = () => {
           animate="visible"
           variants={imageVariants}
         >
-          <video
-            src={video1}
-            autoPlay
-            loop
-            muted
-            className="object-contain w-full h-full"
-          
-          />
+
+       <video
+          autoPlay
+          loop
+          muted
+          className="object-contain w-full h-full"
+        >
+          <source src={video1} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         </motion.div>
+ 
 
         {/* Images */}
         {[photo2, photo3].map((photo, index) => (
